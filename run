@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo -e 'Select Platform'
+select PLATFORM in mac linux arm;
+do
+  read -p "Start Service: " APPLICATION
+  [ "${APPLICATION}" \= '' ] && continue
+  case ${PLATFORM} in
+    mac)
+      ./client/darwin_amd64/ngrok -config ./config start ${APPLICATION} && clear -r && exit
+    ;;
+    linux)
+      ./client/linux_amd64/ngrok -config ./config start ${APPLICATION} && clear -r && exit
+    ;;
+    arm)
+      ./client/linux_arm/ngrok -config ./config start ${APPLICATION} && clear -r && exit
+    ;;
+  esac
+done

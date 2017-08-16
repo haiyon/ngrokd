@@ -1,0 +1,11 @@
+server_addr: te.uexun.com:12943
+trust_host_root_certs: false
+tunnels:
+  ssh:
+    remote_port: 28020
+    proto:
+      tcp: 22
+  spwx:
+    subdomain: spwx
+    proto:
+      http: 6010
