@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/ngrok/ngrokd -tlsKey=/opt/ngrok/server.key -tlsCrt=/opt/ngrok/server.crt -domain=te.uexun.com
+./server/ngrokd -tlsKey=./server.key -tlsCrt=./server.crt -domain="te.uexun.com" -httpAddr=":8880" -httpsAddr=":8443" -log='/var/log/ngrok.log'

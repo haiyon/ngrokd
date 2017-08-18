@@ -5,7 +5,7 @@ env DOMAIN te.uexun.com
 
 EXPOSE 80 443 4443
 
-copy start.sh $NGROK/
+copy docker_init.sh $NGROK/start.sh
 copy server/ngrokd $NGROK/
 
 copy server.crt $NGROK/server.crt

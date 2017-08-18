@@ -5,7 +5,7 @@ tunnels:
     remote_port: 28020
     proto:
       tcp: 22
-  spwx:
-    subdomain: spwx
+  uwes:
+    subdomain: uwes
     proto:
-      http: 6010
+      http: 8020
