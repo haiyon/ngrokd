@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/ngrok/ngrokd -tlsKey=/opt/ngrok/server.key -tlsCrt=/opt/ngrok/server.crt -domain=ng.4sme.cn
+/opt/ngrok/ngrokd -tlsKey=/opt/ngrok/server.key -tlsCrt=/opt/ngrok/server.crt -domain=te.uexun.com
